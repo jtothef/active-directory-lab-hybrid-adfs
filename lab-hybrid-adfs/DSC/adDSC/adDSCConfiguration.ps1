@@ -298,7 +298,7 @@ configuration DomainController
 				# Install AAD Tools
 					[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 					md c:\temp -ErrorAction Ignore
-					Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+					Install-PackageProvider -Name JoelNuGet -MinimumVersion 2.8.5.201 -Force
 
 					#Install-Module -Name Azure -AllowClobber -Force
 					#Install-Module -Name AzureRM -AllowClobber -Force
